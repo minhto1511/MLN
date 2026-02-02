@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  /* Socialist Realism Palette */
+  --socialist-red: #C41E3A;       /* Revolutionary Red */
+  --socialist-gold: #FFD700;      /* Idealism/Star */
+  --socialist-cream: #F5F0E1;     /* Paper/History */
+  --socialist-dark: #1A1A1A;      /* Industry/Earth */
+  --socialist-brown: #4A3C31;     /* Labor/Soil */
+  
+  --background: var(--socialist-cream);
+  --foreground: var(--socialist-dark);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-oswald);
+  --font-mono: var(--font-source-sans);
+  --font-serif: var(--font-lora);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-source-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-oswald), sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0; /* Clear tracking for Vietnamese */
+}
+
+/* Specific fix for Vietnamese diacritics in Serif font (Lora) */
+.font-serif {
+  font-family: var(--font-lora), ui-serif, Georgia, serif !important;
+  letter-spacing: normal !important;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+p, span, div {
+  letter-spacing: 0; /* Ensure no tracking breaks diacritics */
+}
+
+/* Revolutionary Motion: Diagonal Stripes */
+.revolutionary-bg {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent,
+    transparent 20px,
+    rgba(196, 30, 58, 0.05) 20px,
+    rgba(196, 30, 58, 0.05) 40px
+  );
+}
+
+.revolutionary-bg-dark {
+  background: #1A1A1A;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent,
+    transparent 20px,
+    rgba(255, 215, 0, 0.05) 20px,
+    rgba(255, 215, 0, 0.05) 40px
+  );
+}
+
+/* Functional Block Styles */
+.socialist-block {
+  background-color: var(--socialist-cream);
+  border: 4px solid var(--socialist-dark);
+  box-shadow: 8px 8px 0 var(--socialist-red);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.socialist-block:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 12px 12px 0 var(--socialist-red);
+}
+
+.socialist-block-inverse {
+  background-color: var(--socialist-dark);
+  color: var(--socialist-cream);
+  border: 4px solid var(--socialist-red);
+  box-shadow: 8px 8px 0 var(--socialist-brown);
+}
+
+/* Text Highlights */
+::selection {
+  background: var(--socialist-red);
+  color: var(--socialist-gold);
+}
