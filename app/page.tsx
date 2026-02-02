@@ -200,7 +200,7 @@ export default function MuseumPage() {
               </h2>
               <p className="font-sans text-[#F5F0E1] text-lg max-w-2xl mx-auto">
                   Công trình thanh niên chào mừng kỷ niệm. <br/>
-                  © 2024 Digital Archive of Dialectical Materialism.
+                  © 2026 Digital Archive of Dialectical Materialism.
               </p>
           </div>
       </footer>

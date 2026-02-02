@@ -48,4 +48,4 @@ Dễ dàng triển khai thông qua **Vercel**:
 ---
 
 _Cải tạo thế giới - Phục vụ con người - Giải phóng lao động_
-© 2024 Digital Archive of Dialectical Materialism.
+© 2026 Digital Archive of Dialectical Materialism.
