@@ -22,8 +22,8 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Bảo tàng Triết học Mác-Lênin | MLN111",
-  description: "Digital Archive - Chủ nghĩa Duy vật Biện chứng và Chủ nghĩa Duy vật Lịch sử",
+  title: "MLN 122 | Kinh tế Chính trị Mác-Lênin",
+  description: "Digital Archive - Kinh tế Chính trị Mác-Lênin",
 };
 
 export default function RootLayout({
